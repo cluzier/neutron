@@ -30,6 +30,10 @@ Neutron is an application to locate app.asar files in Electron applications.
    ```sh
    npm run dev
    ```
+5. **Run the app:**
+   ```sh
+   npm start
+   ```
 
 ## .gitignore Best Practices
 
