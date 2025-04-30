@@ -6,6 +6,7 @@ Neutron is an application to locate app.asar files in Electron applications.
 - Electron + Next.js app
 - Lightweight build with asset compression
 - Only English locales included for smaller size
+- Cross-platform: macOS, Windows, and Linux support
 
 ## Getting Started
 
@@ -30,10 +31,30 @@ Neutron is an application to locate app.asar files in Electron applications.
    ```sh
    npm run dev
    ```
+
 5. **Run the app:**
    ```sh
    npm start
    ```
+
+## Cross-Platform Builds
+
+Neutron can be built for macOS, Windows, and Linux using electron-builder.
+
+- **Build for all platforms:**
+  ```sh
+  electron-builder -mwl
+  ```
+  (`-mwl` = mac, windows, linux)
+
+- **Note:**
+  - To build Windows apps on macOS or Linux, you need [Wine](https://wiki.winehq.org/Download) installed.
+  - Output installers will be in the `release/` directory.
+
+- **Platform targets:**
+  - **macOS:** `.dmg`, `.zip`
+  - **Windows:** `.exe` (NSIS installer), `.zip`
+  - **Linux:** `.AppImage`, `.deb`, `.zip`
 
 ## .gitignore Best Practices
 

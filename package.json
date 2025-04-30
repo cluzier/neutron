@@ -69,6 +69,12 @@
     "mac": {
       "category": "public.app-category.utilities"
     },
+    "win": {
+      "target": ["nsis", "zip"]
+    },
+    "linux": {
+      "target": ["AppImage", "deb", "zip"]
+    },
     "asar": true,
     "afterPack": "./scripts/remove-locales.js"
   }
